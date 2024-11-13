@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>قناة كاتاكور</title>
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <link rel="stylesheet" href="katacore.css"> <!-- ربط CSS -->
+    <style>
+        /* تأثير البارتكلز كخلفية كاملة */
+        #particles-js {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100vh;
+            z-index: 0; /* خلف المحتوى */
+        }
+        /* تهيئة المحتوى الرئيسي ليظهر فوق تأثير البارتكلز */
+        .content {
+            position: relative;
+            z-index: 1;
+        }
+    </style>
+</head>
+<body>
+    <div id="particles-js"></div>
+    <div class="content">
+        <!-- شريط التنقل -->
+        <nav>
+            <ul>
+                <li><a href="#about" class="nav-button">عن القناة</a></li>
+                <li><a href="#videos" class="nav-button">فيديوهات</a></li>
+                <li><a href="https://screen900.github.io/Screen-/" target="_blank" class="nav-button">اتصل بنا</a></li>
+            </ul>
+        </nav>
+
+        <!-- الوصف -->
+        <header>
+            <h1>مرحبا بكم في قناة كاتاكور!</h1>
+        </header>
+
+        <div class="description">
+            <p>أهلاً وسهلاً بكم في قناة <strong>كاتاكور</strong>، حيث تجدون محتوى رائع وملهم! تهتم القناة بتقديم فيديوهات متنوعة تشمل مراجعات التقنية، نصائح الألعاب، ومحتوى ترفيهي يناسب جميع الأعمار.</p>
+            <p>من أحدث المراجعات التقنية إلى النصائح الخاصة بالألعاب، كل شيء هنا صُمم ليكون تجربة ممتعة ومفيدة لمتابعي قناة كاتاكور. إن كنت من محبي المحتوى الغني والمتنوع، هذه القناة هي وجهتك المثالية.</p>
+            <p>يمكنكم متابعة كل جديد على قناة كاتاكور على YouTube، حيث نعرض فيديوهات حصرية ومشوقة تجعل متابعتكم أكثر متعة!</p>
+            <p>★إشترك عشان تكون برذر★</p>
+            <a href="https://youtube.com/@radouane779?si=RabJAU2dq47amNLs" target="_blank" class="cta-button">زيارة قناة كاتاكور</a>
+            <a href="https://youtube.com/@radouane779?si=RabJAU2dq47amNLs" target="_blank" class="button">اشترك الآن</a>
+        </div>
+
+        <!-- قسم الفيديوهات -->
+        <section id="videos">
+            <h2>أحدث الفيديوهات</h2>
+            <div class="video-list">
+                <div class="video-item">
+                    <h3>هل سولي مضلوم؟</h3>
+                    <a href="https://youtu.be/ostIJSmj34Q?si=sPGPa-Wf-wHhFMVC" target="_blank" class="video-link">شاهد الفيديو</a>
+                </div>
+                <div class="video-item">
+                    <h3>افشل لاعب كرت قدم</h3>
+                    <a href="https://youtu.be/3T6TfSbsqd8?si=wYa4Hns_U8dMkC0G" target="_blank" class="video-link">شاهد الفيديو</a>
+                </div>
+                <div class="video-item">
+                    <h3>مشكلة الجيل الجديد</h3>
+                    <a href="https://youtu.be/mWxXTPU6uc8?si=T7Ii4KnscH04zX4I" target="_blank" class="video-link">شاهد الفيديو</a>
+                </div>
+                <div class="video-item">
+                    <h3>شفا جابت لي الضغط</h3>
+                    <a href="https://youtu.be/oxnCQlJpmgs?si=Cm4T00om1_BrzVzm" target="_blank" class="video-link">شاهد الفيديو</a>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer class="content">
+        © 2024 قناة كاتاكور. جميع الحقوق محفوظة. للتواصل
+    </footer>
+
+    <!-- إعدادات تأثير البارتكلز -->
+    <script>
+    particlesJS("particles-js", {
+        "particles": {
+            "number": {
+                "value": 80,
+                "density": {
+                    "enable": true,
+                    "value_area": 800
+                }
+            },
+            "color": {
+                "value": "#ffffff"
+            },
+            "shape": {
+                "type": "circle",
+            },
+            "opacity": {
+                "value": 0.5,
+                "random": true,
+                "anim": {
+                    "enable": true,
+                    "speed": 1,
+                    "opacity_min": 0.1,
+                    "sync": false
+                }
+            },
+            "size": {
+                "value": 3,
+                "random": true,
+                "anim": {
+                    "enable": true,
+                    "speed": 40,
+                    "size_min": 0.1,
+                    "sync": false
+                }
+            },
+            "line_linked": {
+                "enable": true,
+                "distance": 150,
+                "color": "#ffffff",
+                "opacity": 0.4,
+                "width": 1
+            },
+            "move": {
+                "enable": true,
+                "speed": 6,
+                "direction": "none",
+                "random": true,
+                "straight": false,
+                "out_mode": "out",
+                "bounce": false
+            }
+        },
+        "interactivity": {
+            "detect_on": "canvas",
+            "events": {
+                "onhover": {
+                    "enable": true,
+                    "mode": "repulse"
+                },
+                "onclick": {
+                    "enable": true,
+                    "mode": "push"
+                }
+            }
+        },
+        "retina_detect": true
+    });
+    </script>
+</body>
+</html>
